@@ -10,6 +10,10 @@ p {
     /*Los primeros pixeles nos marca el movimiento de la sombra a la derecha.
     El segundo nos marca el movimiento hacia abajo de la sombra.
     Y el tercero nos marca la densidad del sombreado, siendo 0 la densidad mas fuerte.*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: 100;
 }
 
 a {
