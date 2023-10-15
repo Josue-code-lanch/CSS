@@ -22,7 +22,7 @@ a {
     letter-spacing: 5px;
     background-color: aquamarine;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 30px;
     border: solid 1px black;
 }
@@ -42,4 +42,20 @@ a:hover {
 
 a:active {
     color: white;
+}
+
+ul {
+    background-color: white;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    padding-left: 0px;
+}
+
+ul li {
+    list-style-type: georgian;
+}
+
+li {
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
 }
