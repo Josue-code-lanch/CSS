@@ -52,10 +52,35 @@ ul {
 }
 
 ul li {
-    list-style-type: georgian;
+    list-style-type: none;
 }
 
 li {
     border-bottom: solid 1px #ddd;
     padding: 15px;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: cadetblue;
+}
+
+td {
+    border: solid 1px #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: darkseagreen;
+    color: white;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
