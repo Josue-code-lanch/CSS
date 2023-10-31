@@ -34,3 +34,26 @@ body {
     color: white;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.9);
 }
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    transform: skew(10deg);
+    
+    /*transform: rotate(25deg);
+    Con esta etiqueta podemos hacer que nuestra caja rote los grados que
+    le indiquemos, ya sea a la izquierda o a la derecha.
+    
+    transform: skew(10deg)
+    Esta etiqueta hace que nuestra caja tome una inclinacion.*/
+}
+
+.box:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.7);
+}
