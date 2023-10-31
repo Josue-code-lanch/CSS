@@ -43,17 +43,33 @@ body {
     height: 100px;
     background-color: white;
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-    transform: skew(10deg);
+    transition: 0.3s;
+} 
+
+.box:hover {
+    transform: scale(1.05, 1.05);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*transform: rotatex(40deg);
+    Con esta etiqueta hacemos que la caja tenga una transforamcion tipo 3d.
+    Le indicamos los grados que queramos que se incline segun el eje que le 
+    indiquemos (X, Y)
     
-    /*transform: rotate(25deg);
+    transform: rotate(25deg);
     Con esta etiqueta podemos hacer que nuestra caja rote los grados que
     le indiquemos, ya sea a la izquierda o a la derecha.
     
     transform: skew(10deg)
     Esta etiqueta hace que nuestra caja tome una inclinacion.*/
-}
 
-.box:hover {
+
+/*.box:hover {
     transform: scale(1.05, 1.05);
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.7);
-}
+
+    Con esta etiqueta podemos hacer que la caja tenga una
+    sensacion de sombra, y que se levante un poco segun la 
+    escala que le indiquemos.
+}*/
+
