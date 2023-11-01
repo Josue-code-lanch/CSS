@@ -3,7 +3,8 @@ body {
 }
 
 .grid {
-    display: inline-grid;
+    display: grid;
+    grid-template-columns: 20px 100px 100px;
 }
 
 .element {
