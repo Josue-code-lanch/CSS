@@ -6,6 +6,9 @@ body {
     display: grid;
     grid-template-rows: repeat(1, 50px);
     grid-template-columns: 50px repeat(3, 1fr) 50px;
+    grid-gap: 3px 3px; 
+    /*El primer valor de pixeles son para
+    las FILAS, y el segundo valor son para las COLUMNAS.*/
 }
 
 .element {
