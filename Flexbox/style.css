@@ -4,6 +4,21 @@ body {
 }
 
 .flex {
-    display: flex;
-    flex-flow: row wrap;
+    display: flex; /*Flex hace que el contenido quede en una misma fila.*/
+
+    height: 200px;
+    /*Flex-direction hace que nuestro contenido tenga dos direcciones: Row = Fila, Column = Columna
+    Tambien existe la opcion de Reverse, lo que hace que nuestro contenido se coloque en el lugar
+    contrario al que tenga. Si esta a la izquiera, se ira a la derecha, y si esta a la derecha se ira a la izquierda.
+    Si esta arriba, ira hacia abajo, y si esta abajo ira hacia arriba*/
+
+    /*Flex-wrap: Esto hace que el contenido, al sobrepasar el ancho maximo del container, haga un salto de linea.
+    Flex-wrap: nowrap es el formato predeterminado. No hace que el contenido haa un salto de linea.
+    Flex-wrap: wrap Si hace que el contenido haga un salto de linea.*/
+
+    flex-flow: row wrap; /*Flex-flow es un atajo para las propiedades de Flex-direction y Flex-wrap.
+    El primer valor toma la direccion, y el segundo el cambio o salto de linea.*/
+
+    justify-content: center; /*Hace que el contenido se posicione a la derecha (por defecto Flex-start), centro (center) o izquierda (Flex-end)*/
+    align-content: center; /*Hace que la caja en general se mueva dentro del ancho y alto que este tenga.*/
 }
