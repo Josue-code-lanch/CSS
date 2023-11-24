@@ -22,3 +22,22 @@ body {
     justify-content: center; /*Hace que el contenido se posicione a la derecha (por defecto Flex-start), centro (center) o izquierda (Flex-end)*/
     align-content: center; /*Hace que la caja en general se mueva dentro del ancho y alto que este tenga.*/
 }
+
+.flex1 {
+    display: flex;
+}
+
+/*con ORDER podemos manipular el orden que tengan todos los elementos.
+El valor inicial por defecto es cero.*/
+
+.primero {
+    order: 1;
+}
+
+.segundo {
+    order: 0;
+}
+
+.tercero {
+    order: 2;
+}
