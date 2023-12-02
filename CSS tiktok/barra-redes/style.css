@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+    outline: none;
+    -webkit-top-highliht-color: transparent;
+}
+
+html, body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+.envoltura {
+    display: inline-flex;
+    list-style: none;
+}
+
+.envoltura .icono {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.envoltura .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px; 
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.envoltura .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.envoltura .icono:hover .tooltip{
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.envoltura .icono:hover span, .envoltura .icono:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.envoltura .facebook:hover, .envoltura .facebook:hover .tooltip, .envoltura .facebook:hover .tooltip::before {
+    background-color: #1877f2;
+    color: white;
+}
+
+.envoltura .twitter:hover, .envoltura .twitter:hover .tooltip, .envoltura .twitter:hover .tooltip::before {
+    background-color: #1da1f2;
+    color: white;
+}
+
+.envoltura .instagram:hover, .envoltura .instagram:hover .tooltip, .envoltura .instagram:hover .tooltip::before {
+    background-color: #e4405f;
+    color: white;
+}
+
+.envoltura .github:hover, .envoltura .github:hover .tooltip, .envoltura .github:hover .tooltip::before {
+    background-color: #333333;
+    color: white;
+}
+
+.envoltura .youtube:hover, .envoltura .youtube:hover .tooltip, .envoltura .youtube:hover .tooltip::before {
+    background-color: #cd201f;
+    color: white;
+}
