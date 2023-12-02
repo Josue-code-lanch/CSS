@@ -90,7 +90,7 @@ html, body {
 }
 
 .envoltura .instagram:hover, .envoltura .instagram:hover .tooltip, .envoltura .instagram:hover .tooltip::before {
-    background-color: #e4405f;
+    background-color: #be47be;
     color: white;
 }
 
