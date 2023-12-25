@@ -1,0 +1,40 @@
+.digital-clock {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2d2d2d;
+    width: 3rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.week .active {
+    color: white;
+}
+
+.time {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hour,
+.min, 
+.dot {
+    display: inline-block;
+    font-size: 13rem;
+}
+
+.invisible {
+    visibility: hidden;
+}
